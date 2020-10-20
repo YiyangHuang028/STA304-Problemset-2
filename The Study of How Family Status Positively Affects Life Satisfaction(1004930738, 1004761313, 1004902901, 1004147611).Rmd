@@ -67,7 +67,7 @@ $$
 Y_i = \beta_0 + \beta_1 X_{male,i} + \beta_2 X_{MS_{LCL},i} + \beta_3 X_{MS_{Married},i} + \beta_4 X_{MS_{Seperated},i} + \beta_5 X_{MS_{Single},i} + \beta_6 X_{MS_{Widowed},i}
 $$
 $$
-+ \beta_7 X_{LA_{C.only},i} + \beta_8 X_{LA_{others},i} + \beta_9 X_{LA_{S.only},i} + \beta_{10} X_{LA_{parents},i} + \beta_{11} X_{LA_{SandC},i} + \beta_{12} X_{TotalC,i}
++ \beta_7 X_{LA_{C.only},i} + \beta_8 X_{LA_{others},i} + \beta_9 X_{LA_{S.only},i} + \beta_{10} X_{LA_{parents},i} + \beta_{11} X_{LA_{SandC},i} + \beta_{12} X_{TotalC,i} + e_i
 $$
 
 To analyze population’s life satisfaction and provide a good estimation, we chose to use multiple linear regression(MLR). In comparison to single linear regression, MLR is useful to determine “the relative influence of one or more predictor variables to the criterion value” as well as “outliers and anomalies” (Weedmark, 2018). Unlike the logistic model, MLR can be used to predict a numeric variable, which is exactly what we need in this study. Another strength of multiple linear regression is that it is easy to interpret, which means it can be understood by most of the population. We put this into consideration because if people can understand how we get the result, they are more likely to be convinced.
@@ -84,7 +84,7 @@ In this study, MLR allows us to model the relationship between 4 independent pre
 
 The model assumption is checked by plotting standard residual plot of all predictor variables and fitted values. According to Figure \@ref(fig:fig5), the dots are evenly spread out and there is no obvious pattern observed. Thus, we can conclude that there are no obvious model violations (independent and constant variance). In the normal QQ plot, some of the dots do not follow the straight line which suggests that the normality is not fully satisfied. For example:
 $$
-Y_i = 7.631 - 0.105 X_{male,i} + 0.276 X_{MS_{LCL},i} + 0.463 X_{MS_{Married},i} - 0.355 X_{MS_{Seperated},i} - 0.033 X_{MS_{Single},i} + 0.227 X_{MS_{Widowed},i}
+\hat{Y_i} = 7.631 - 0.105 X_{male,i} + 0.276 X_{MS_{LCL},i} + 0.463 X_{MS_{Married},i} - 0.355 X_{MS_{Seperated},i} - 0.033 X_{MS_{Single},i} + 0.227 X_{MS_{Widowed},i}
 $$
 $$
 - 0.0966 X_{LA_{C.only},i} + 0.0744 X_{LA_{others},i} + 0.368 X_{LA_{S.only},i} + 0.361 X_{LA_{parents},i} + 0.23 X_{LA_{SandC},i} + 0.046 X_{TotalC,i}
